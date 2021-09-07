@@ -1,23 +1,25 @@
 #nginx-mrigank-rc.yaml 
 apiVersion: v1
 kind: ReplicationController
-metadata:
+metadata: 
+  labels: 
+    app: nginx-app
   name: nginx-mrigank-rc
-  labels:
-    app: nginx-app
-spec:
+spec: 
   replicas: 3
-  selector:
+  selector: 
     app: nginx-app
-  template:
-    metadata:
-      name: nginx-pod
-      labels:
+  template: 
+    metadata: 
+      labels: 
         app: nginx-app
-    spec:
-      containers:
-      - name: nginx-container
-        image: nginx
-        ports:
-        - containerPort: 6443
+      name: nginx-pod
+    spec: 
+      containers: 
+        - 
+          image: nginx
+          name: nginx-container
+          ports: 
+            - 
+              containerPort: 6443
     
