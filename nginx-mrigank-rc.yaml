@@ -1,4 +1,4 @@
-#nginx-rc.yaml
+#nginx-mrigank-rc.yaml 
 apiVersion: v1
 kind: ReplicationController
 metadata:
