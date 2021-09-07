@@ -17,5 +17,5 @@ spec:
         - name: nginx-container
           image: nginx
           ports:
-          - containerPort: 100
+          - containerPort: 80
     
